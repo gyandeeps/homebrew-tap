@@ -13,7 +13,8 @@ class VerveCli < Formula
   end
 
   def install
-    bin.install "verve-cli"
+    binary_name = Dir["verve-cli-darwin-*"].first
+    bin.install binary_name => "verve-cli"
   end
 
   test do
