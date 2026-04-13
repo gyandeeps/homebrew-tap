@@ -6,10 +6,10 @@ class VerveCli < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/gyandeeps/verve-releases/releases/download/0.0.1/verve-cli-darwin-arm64.tar.gz"
-    sha256 "b80cac97b2d27d598adf0beaa1be2934d46275357c6907c0e4b915bb4b5a40db" # arm64
+    sha256 "0292d5757bc075aa80375a82fb801931a7482bfb697e49f52e226e27b16e4ab4" # arm64
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/gyandeeps/verve-releases/releases/download/0.0.1/verve-cli-darwin-amd64.tar.gz"
-    sha256 "7b6898293a3a365bef28e8391ee22c8f323a53e6c967c56e03699fb95696e834" # amd64
+    sha256 "5e19ee10415b469f1b0d33d2a14d15c5e9708bc52c9b7dd6792203ab47daab04" # amd64
   end
 
   def install
